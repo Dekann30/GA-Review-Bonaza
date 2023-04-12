@@ -15,8 +15,9 @@ Exercise 2:
 */
 
 // Complete Exercise 2 below...
+foods.push('pizza','cheesburger')
 
-// console.log("Exercise 2 Result: ", foods)
+console.log("Exercise 2 Result: ", foods)
 
 /*
 Exercise 3:
@@ -24,8 +25,9 @@ Exercise 3:
 */
 
 // Complete Exercise 3 below...
+foods.unshift('taco')
 
-// console.log("Exercise 3 Result: ", foods)
+console.log("Exercise 3 Result: ", foods)
 
 /*
 Exercise 4:
@@ -33,8 +35,9 @@ Exercise 4:
 */
 
 // Complete Exercise 4 below...
+let favFood = foods.at(1)
 
-// console.log("Exercise 4 Result: ", favFood)
+console.log("Exercise 4 Result: ", favFood)
 
 /*
 Exercise 5:
@@ -42,8 +45,9 @@ Exercise 5:
 */
 
 // Complete Exercise 5 below...
+foods.splice(2,0,'tofu')
 
-// console.log("Exercise 5 Result: ", foods)
+console.log("Exercise 5 Result: ", foods)
 
 /*
 Exercise 6:
@@ -51,8 +55,9 @@ Exercise 6:
 */
 
 // Complete Exercise 6 below...
+foods.splice(1,1, 'sushi', 'cupcake')
 
-// console.log("Exercise 6 Result: ", foods)
+console.log("Exercise 6 Result: ", foods)
 
 /*
 Exercise 7:
@@ -61,8 +66,9 @@ Exercise 7:
 */
 
 // Complete Exercise 7 below...
+let yummy = foods.slice(1,3)
 
-// console.log("Exercise 7 Result: ", yummy)
+console.log("Exercise 7 Result: ", yummy)
 
 /*
 Exercise 8:
@@ -70,8 +76,9 @@ Exercise 8:
 */
 
 // Complete Exercise 8 below...
+let soyIdx = foods.indexOf('tofu')
 
-// console.log("Exercise 8 Result: ", soyIdx)
+console.log("Exercise 8 Result: ", soyIdx)
 
 /*
 Exercise 9:
@@ -80,8 +87,9 @@ Exercise 9:
 */
 
 // Complete Exercise 9 below...
+let allFoods = foods.join(' -> ')
 
-// console.log("Exercise 9 Result: ", allFoods)
+console.log("Exercise 9 Result: ", allFoods)
 
 /*
 Exercise 10:
@@ -89,8 +97,9 @@ Exercise 10:
 */
 
 // Complete Exercise 10 below...
+let hasSoup = foods.includes('soup')
 
-// console.log("Exercise 10 Result: ", hasSoup)
+console.log("Exercise 10 Result: ", hasSoup)
 
 /*
 Exercise 11:
