@@ -43,3 +43,32 @@ for(i=99; i>=0; i--){
 }
 console.log(0)
 
+console.log('Number 7')
+//7. Create Loop log numbers 49-72 Ascending
+let num = 0
+
+while(num <99){
+    num++
+    if(num>=49 && num<=72){
+        console.log(num)
+    }
+}
+
+console.log('Number 8')
+//8. Create Loop log numbers 81-26 Descending
+let num2 = 100
+
+while(num2 > 0){
+    num2--
+    if(num2<=81 && num2 >= 26){
+        console.log(num2)
+    }
+}
+
+console.log('Number 9')
+//9. Create Loop log numbers 3-90 that are multiples of 3 Ascending
+for(k=3; k<=90; k++){
+    if(k%3==0){
+        console.log(k)
+    }
+}
