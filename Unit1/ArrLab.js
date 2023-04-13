@@ -110,8 +110,15 @@ Exercise 11:
 const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90]
 
 // Complete Exercise 11 below...
+let odds = []
 
-// console.log("Exercise 11 Result: ", odds)
+nums.forEach(number => {
+    if(number%2!=0){
+        odds.push(number)
+    }
+})
+
+console.log("Exercise 11 Result: ", odds)
 
 /*
 Exercise 12:
@@ -122,11 +129,26 @@ Exercise 12:
 */
 
 // Complete Exercise 12 below...
+let fizz = []
+let buzz = []
+let fizzbuzz = []
 
-// console.log("Exercise 12 Results:")
-// console.log("  fizz:", fizz)
-// console.log("  buzz:", buzz)
-// console.log("  fizzbuzz:", fizzbuzz)
+nums.forEach(numb => {
+    if(numb%3==0 && numb%5==0){
+        fizzbuzz.push(numb)
+    }
+    if(numb%3==0){
+        fizz.push(numb)
+    }
+    if(numb%5==0){
+        buzz.push(numb)
+    }
+})
+
+console.log("Exercise 12 Results:")
+console.log("  fizz:", fizz)
+console.log("  buzz:", buzz)
+console.log("  fizzbuzz:", fizzbuzz)
 
 /*
 Exercise 13:
@@ -142,8 +164,9 @@ const numArrays = [
 ]
 
 // Complete Exercise 13 below...
+let numList = numArrays.slice(-1)
 
-// console.log("Exercise 13 Result: ", numList)
+console.log("Exercise 13 Result: ", numList)
 
 /*
 Exercise 14:
@@ -151,8 +174,9 @@ Exercise 14:
 */
 
 // Complete Exercise 14 below...
+let num = numArrays[2][1]
 
-// console.log("Exercise 14 Result: ", num)
+console.log("Exercise 14 Result: ", num)
 
 /*
 Exercise 15:
@@ -161,5 +185,14 @@ Exercise 15:
 */
 
 // Complete Exercise 15 below...
+let total = 0
+let sums =[]
 
-// console.log("Exercise 15 Result: ", total)
+numArrays.forEach(arr => {
+    sums.push(arr.reduce((a,b)=>a+b))
+    sums.forEach(sum => {
+        total = sums.reduce((c,d)=>c+d)
+    })
+})
+
+console.log("Exercise 15 Result: ", total)
